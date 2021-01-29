@@ -37,8 +37,7 @@
     <!-- **************************  -->
     <header>
 
-        <?php require('assets/templates/navbar.php');  ?>
-
+        <?php require('assets/php/templates/navbar.php');  ?>
 
     </header>
 
@@ -55,7 +54,7 @@
     <footer>
 
 
-        <?php require('assets/templates/footer.php');  ?>
+        <?php require('assets/php/templates/footer.php');  ?>
 
 
     </footer>
