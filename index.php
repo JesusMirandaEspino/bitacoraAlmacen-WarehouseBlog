@@ -1,3 +1,5 @@
+<?php require('assets/php/init.php');  ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,8 +8,8 @@
     <!-- **************************  -->
     <!-- **************************  -->
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Una Aplicacion web para poder Gestionar la logistica de un almacen">
+    <meta name="keywords" content="Warehouse Blog, bitacora, almacen, entradas, salidas, logistica, cms">
     <meta name="author" content="Jesus Miranda">
     <!-- **************************  -->
     <!-- **************************  -->
@@ -18,13 +20,13 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/responsivo.css">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- **************************  -->
     <!-- **************************  -->
     <link rel="icon" type="image/png" href="">
     <!-- **************************  -->
     <!-- **************************  -->
-    <title></title>
+    <title>Bitacora de Almacen - Warehouse Blog</title>
 
 
 </head>
@@ -35,7 +37,7 @@
     <!-- **************************  -->
     <header>
 
-        <h1>Warehouse Blog</h1>
+        <?php require('assets/templates/navbar.php');  ?>
 
 
     </header>
@@ -51,6 +53,9 @@
     <!-- **************************  -->
     <!-- **************************  -->
     <footer>
+
+
+        <?php require('assets/templates/footer.php');  ?>
 
 
     </footer>
