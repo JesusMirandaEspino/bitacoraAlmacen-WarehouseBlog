@@ -1,4 +1,4 @@
-<?php require('assets/php/init.php');  ?>
+<?php require('../../php/init.php');  ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -17,10 +17,10 @@
     <meta name="robots" content="INDEX,FOLLOW">
     <!-- **************************  -->
     <!-- **************************  -->
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/responsivo.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <!-- **************************  -->
     <!-- **************************  -->
     <link rel="icon" type="image/png" href="">
@@ -30,39 +30,3 @@
 
 
 </head>
-
-<body>
-
-    <!-- **************************  -->
-    <!-- **************************  -->
-    <header>
-
-        <?php require('assets/php/templates/header.php');  ?>
-
-        <?php require('assets/php/templates/navbar.php');  ?>
-
-    </header>
-
-
-    <!-- **************************  -->
-    <!-- **************************  -->
-    <main>
-
-    </main>
-
-
-    <!-- **************************  -->
-    <!-- **************************  -->
-    <footer>
-
-
-        <?php require('assets/php/templates/footer.php');  ?>
-
-
-    </footer>
-
-
-
-</body>
-
-</html>
