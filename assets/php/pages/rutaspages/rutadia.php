@@ -4,7 +4,6 @@
 
     <header>
 
-
         <?php require('../../templates/header.php');  ?>
 
         <?php require('navrutas.php');  ?>
@@ -15,15 +14,10 @@
             <div class="contenedor1">
 
                 <div class="col-full-12">
-
                     <h1>Rutas del dia</h1>
-
                 </div>
 
-
             </div>
-
-
 
         </section>
 
