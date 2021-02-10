@@ -14,6 +14,7 @@
                         <li><a href="rutaspages/rutasemana.php">Acumulado Semanal</a></li>
                         <li><a href="rutaspages/rutasemana.php">Acumlado Mensual</a></li>
                         <li><a href="">Historico</a></li>
+                        <li><a href="">Buscar por dia</a></li>
                     </ul>
                 </nav>
 

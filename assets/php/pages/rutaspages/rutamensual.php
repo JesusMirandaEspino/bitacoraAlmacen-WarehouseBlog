@@ -76,10 +76,10 @@
             </div>
 
             <div class="contenedor1">
-                <div class="col-full-3">3</div>
-                <div class="col-full-3">3</div>
-                <div class="col-full-3">3</div>
-                <div class="col-full-3">3</div>
+                <div class="col-full-3"><p>1</p></div>
+                <div class="col-full-3"><p>1</p></div>
+                <div class="col-full-3"><p>1</p></div>
+                <div class="col-full-3"><p>1</p></div>
             </div>
 
         </section>
@@ -126,12 +126,12 @@
 
             <div class="contenedor1">
 
-                <div class="col-full-2">1</div>
-                <div class="col-full-2">1</div>
-                <div class="col-full-2">1</div>
-                <div class="col-full-2">1</div>
-                <div class="col-full-2">1</div>
-                <div class="col-full-2">1</div>
+                <div class="col-full-2"><p>2</p></div>
+                <div class="col-full-2"><p>2</p></div>
+                <div class="col-full-2"><p>2</p></div>
+                <div class="col-full-2"><p>2</p></div>
+                <div class="col-full-2"><p>2</p></div>
+                <div class="col-full-2"><p>2</p></div>
 
             </div>
 
@@ -174,9 +174,9 @@
 
             <div class="contenedor1">
 
-                <div class="col-full-4">1</div>
-                <div class="col-full-4">1</div>
-                <div class="col-full-4">1</div>
+                <div class="col-full-4"><p>3</p></div>
+                <div class="col-full-4"><p>3</p></div>
+                <div class="col-full-4"><p>3</p></div>
 
             </div>
 
@@ -219,9 +219,9 @@
 
             <div class="contenedor1">
 
-                <div class="col-full-4">1</div>
-                <div class="col-full-4">1</div>
-                <div class="col-full-4">1</div>
+                <div class="col-full-4"><p>4</p></div>
+                <div class="col-full-4"><p>4</p></div>
+                <div class="col-full-4"><p>4</p></div>
 
             </div>
 
@@ -258,9 +258,9 @@
             </div>
 
             <div class="contenedor1">
-                <div class="col-full-4">2</div>
-                <div class="col-full-4">2</div>
-                <div class="col-full-4">2</div>
+                <div class="col-full-4"><p>7</p></div>
+                <div class="col-full-4"><p>7</p></div>
+                <div class="col-full-4"><p>7</p></div>
             </div>
 
         </section>
@@ -295,9 +295,9 @@
             </div>
 
             <div class="contenedor1">
-                <div class="col-full-4">2</div>
-                <div class="col-full-4">2</div>
-                <div class="col-full-4">2</div>
+                <div class="col-full-4"><p>2</p></div>
+                <div class="col-full-4"><p>2</p></div>
+                <div class="col-full-4"><p>2</p></div>
             </div>
 
         </section>

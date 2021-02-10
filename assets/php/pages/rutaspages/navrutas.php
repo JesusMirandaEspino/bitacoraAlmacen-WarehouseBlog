@@ -8,6 +8,7 @@
                     <li><a href="rutasemana.php">Acumulado Semanal</a></li>
                     <li><a href="rutamensual.php">Acumlado Mensual</a></li>
                     <li><a href="">Historico</a></li>
+                    <li><a href="">Buscar por dia</a></li>
                 </ul>
             </nav>
         </div>
