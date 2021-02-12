@@ -1,10 +1,4 @@
 //@charset utf-8;
 @import 'models/colors.scss';
-
-body{
-    background-color:$light-blue-primary;
-}
-
-h1{
-    color:red;
-}
+@import 'models/fonts.scss';
+@import 'models/mixing.scss';
