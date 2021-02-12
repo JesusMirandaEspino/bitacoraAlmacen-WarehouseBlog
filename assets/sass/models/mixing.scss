@@ -1,0 +1,20 @@
+@import "colors.scss";
+
+
+//---------------------------------//
+//----------flex box basic---------//
+@mixin  flexboxbasic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//---------------------------------//
+//----------flex box column---------//
+@mixin  flexboxcolumn {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
