@@ -7,7 +7,38 @@
 
 //General styles
 body{
-    font-family:$black;
-    font-size:$title-medium;
+    font-family:$regular;
+    font-size:$regular-size;
 }
 
+
+//TODOheader//
+.principal-tittle{
+    font-family :$heavy;
+    font-size: $title-super;
+    margin-top:$space-small;
+    color:$light-gold-primary;
+}
+
+.secundary-tittle{
+    font-family :$black;
+    font-size: $subtitle-super;
+    margin-top:$space-small;
+    margin-bottom:$space-small;
+    color:$light-gold-primary;
+}
+
+.title-container{
+    background-color: $dark-blue-tertiary;
+}
+//TODOheader//
+
+
+//TODO Footer
+.footer-container{
+    background-color: $dark-blue-tertiary;
+}
+
+
+
+//TODO Footer

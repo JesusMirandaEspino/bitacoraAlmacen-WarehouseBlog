@@ -1,4 +1,4 @@
-<section class="fila">
+<section class="fila footer-container">
 
     <div class="contenedor1">
 
