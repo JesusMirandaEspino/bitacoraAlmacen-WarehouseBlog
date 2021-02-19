@@ -10,10 +10,10 @@
                 <nav class="col-full-12 navbar-pc">
                     <ul class="col-full-12">
                         <li><a href="../.././../index.php">Home</a></li>
-                        <li><a href="unidadespages/unidadesinfo.php">Informacion Unidades</a></li>
-                        <li><a href="unidadespages/unidadesinfo.php">Informacion Choferes</a></li>
-                        <li><a href="unidadespages/rendimiento.php">Ingresar Rendimiento</a></li>
-                        <li><a href="unidadespages/mensual.php">Rendimiento Mensual</a></li>
+                        <li><a href="unidadespages/unidadesinfo.php">Unidades</a></li>
+                        <li><a href="unidadespages/unidadesinfo.php">Choferes</a></li>
+                        <li><a href="unidadespages/rendimiento.php">Rendimiento</a></li>
+                        <li><a href="unidadespages/mensual.php">Acumulado</a></li>
                         <li><a href="unidadespages/historico.php">Historico</a></li>
                     </ul>
                 </nav>
