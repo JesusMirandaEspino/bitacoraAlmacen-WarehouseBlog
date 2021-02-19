@@ -7,7 +7,7 @@
     <header>
         <section>
             <div class="contenedor1">
-                <nav class="col-full-12">
+                <nav class="col-full-12 navbar-pc">
                     <ul class="col-full-12">
                         <li><a href="../.././../index.php">Home</a></li>
                         <li><a href="rutaspages/rutadia.php">Ingresar Ruta del dia</a></li>

@@ -1,6 +1,6 @@
     <section>
         <div class="contenedor1">
-            <nav class="col-full-12">
+            <nav class="col-full-12 navbar-pc">
                 <ul class="col-full-12">
                     <li><a href="../../pages/unidades.php">Unidades</a></li>
                     <li><a href="unidadesinfo.php">Informacion Unidades</a></li>

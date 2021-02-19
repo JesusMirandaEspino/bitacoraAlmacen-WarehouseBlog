@@ -1,6 +1,6 @@
     <section>
         <div class="contenedor1">
-            <nav class="col-full-12">
+            <nav class="col-full-12 navbar-pc">
                 <ul class="col-full-12">
                     <li><a href="../../pages/rutas.php">Rutas</a></li>
                     <li><a href="rutadia.php">Ingresar Ruta del dia</a></li>

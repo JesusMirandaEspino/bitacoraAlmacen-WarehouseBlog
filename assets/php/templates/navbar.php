@@ -3,7 +3,7 @@
     <div class="contenedor1">
 
 
-        <nav class="col-full-12">
+        <nav class="col-full-12  navbar-pc">
 
             <ul class="col-full-12">
 

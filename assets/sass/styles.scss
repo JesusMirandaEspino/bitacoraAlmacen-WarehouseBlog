@@ -9,6 +9,11 @@
 body{
     font-family:$regular;
     font-size:$regular-size;
+    min-height: 100vh;
+}
+
+main{
+    min-height: 70vh;
 }
 
 
@@ -29,16 +34,43 @@ body{
 }
 
 .title-container{
-    background-color: $dark-blue-tertiary;
+    background-color: $dark-blue;
 }
 //TODOheader//
 
 
 //TODO Footer
 .footer-container{
-    background-color: $dark-blue-tertiary;
+    background-color: $dark-blue-primary;
+    min-height: 10vh;
+    
+        p{
+            font-family: $thin;
+            font-size: $note-super;
+            color:$white-primary;
+            margin:$min;
+        }
 }
 
-
-
 //TODO Footer
+
+
+//TODO Navbar PC
+.navbar-pc{
+    @include flexboxbasic;
+    flex-wrap: wrap;
+    background-color: $dark-blue-secundary;
+    ul{
+        @include flexboxbasic;
+        flex-wrap: wrap;
+        margin-top:$space-small;
+        margin-bottom:$space-small;
+        li{
+            a{
+                font-family :$black;
+                color:$white-primary;
+                margin:$min;
+            }
+        }
+    }
+}
