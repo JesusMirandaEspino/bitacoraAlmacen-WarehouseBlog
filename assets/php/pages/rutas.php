@@ -11,8 +11,9 @@
                     <ul class="col-full-12">
                         <li><a href="../.././../index.php">Home</a></li>
                         <li><a href="rutaspages/rutadia.php">Ingresar Ruta del dia</a></li>
-                        <li><a href="rutaspages/rutasemana.php">Acumulado Semanal</a></li>
-                        <li><a href="rutaspages/rutasemana.php">Acumlado Mensual</a></li>
+                        <li><a href="rutaspages/rutainfo.php">Informacion del dia</a></li>
+                        <li><a href="rutaspages/rutasemana.php">Semanal</a></li>
+                        <li><a href="rutaspages/rutasemana.php">Mensual</a></li>
                         <li><a href="">Historico</a></li>
                         <li><a href="">Buscar por dia</a></li>
                     </ul>
