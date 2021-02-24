@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/assets/css/responsivo.css">
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/assets/css/estilos.css">
+
 
     <!-- **************************  -->
     <!-- **************************  -->
@@ -29,6 +29,10 @@
     <!-- **************************  -->
     <!-- **************************  -->
     <title>Bitacora de Almacen - Warehouse Blog</title>
+
+    <style>
+
+    </style>
 
 
 </head>

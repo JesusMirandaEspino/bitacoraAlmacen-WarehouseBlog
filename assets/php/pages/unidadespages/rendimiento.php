@@ -10,7 +10,7 @@
 
             <div class="contenedor1">
                 <div class="col-full-12">
-                    <h1>Ingresa el rendimiento</h1>
+                    <h1 class="title-pages">Ingresa el rendimiento</h1>
                 </div>
             </div>
         </section>

@@ -14,7 +14,7 @@
             <div class="contenedor1">
 
                 <div class="col-full-12">
-                    <h1>Rutas del dia</h1>
+                    <h1 class="title-pages">Rutas del dia</h1>
                 </div>
 
             </div>
@@ -31,10 +31,10 @@
 
         <section class="fila">
 
-            <div class="contenedor1">
+            <div class="contenedor1  form-title-container ">
 
-                <div class="col-full-12">
-                    <h2>Ingresa informacion de la ruta del dia</h2>
+                <div class="col-full-12 ">
+                    <h2 class="title-form ">Ingresa informacion de la ruta del dia</h2>
                 </div>
 
             </div>
@@ -43,14 +43,14 @@
             <form class="fila">
 
                 <!--  Primera parte del Formulario chofer y unidad -->
-                <div class="contenedor1">
+                <div class="contenedor1 form-part-container ">
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="date">Fecha</label>
                         <input type="date" name="date" id="date">
                     </div>
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="driver">Chofer</label>
                         <select>
                             <option value="driver1">Chofer1</option>
@@ -59,7 +59,7 @@
                         </select>
                     </div>
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="copilot">Copiloto</label>
                         <select>
                             <option value="copilo1">Copiloto1</option>
@@ -68,7 +68,7 @@
                         </select>
                     </div>
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="vehicle">Unidad</label>
                         <select>
                             <option value="vehicle1">Unidad1</option>
@@ -77,12 +77,12 @@
                         </select>
                     </div>
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="kmentry">KM Salida</label>
                         <input type="number" name="kmentry" id="kmentry">
                     </div>
 
-                    <div class="col-full-2">
+                    <div class="col-full-2 data-container">
                         <label for="kmarrival">KM Llegada</label>
                         <input type="number" name="kmarrival" id="kmarrival">
                     </div>
@@ -92,9 +92,9 @@
 
 
                 <!--  Segunda parte del Formulario Pedido -->
-                <div class="contenedor1">
+                <div class="contenedor1 form-part-container">
 
-                    <div class="col-full-3">
+                    <div class="col-full-3 data-container">
                         <label for="order">Tipo de Pedido</label>
                         <select>
                             <option value="order1">En Ruta</option>
@@ -102,7 +102,7 @@
                         </select>
                     </div>
 
-                    <div class="col-full-3">
+                    <div class="col-full-3 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="store">Tienda origen</label>
                         <select>
@@ -111,12 +111,12 @@
                         </select>
                     </div>
 
-                    <div class="col-full-3">
+                    <div class="col-full-3 data-container">
                         <label for="requested">$ Solicitado</label>
                         <input type="number" name="requested" id="requested">
                     </div>
 
-                    <div class="col-full-3">
+                    <div class="col-full-3 data-container">
                         <label for="assortment">$ Surtido</label>
                         <input type="number" name="assortment" id="assortment">
                     </div>
@@ -126,21 +126,21 @@
 
 
                 <!--  Tercera parte del Formulario Cliente -->
-                <div class="contenedor1">
+                <div class="contenedor1 form-part-container">
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="clientname">Nombre del cliente</label>
                         <input type="text" name="clientname" id="clientname">
                     </div>
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="clientaddres">Domicilio</label>
                         <input type="text" name="clientaddres" id="clientaddres">
                     </div>
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="clientcity">Minucipio</label>
                         <input type="text" name="clientcity" id="clientcity">
@@ -151,21 +151,21 @@
 
 
                 <!--  Cuarta parte del Formulario Informacion adicional -->
-                <div class="contenedor1">
+                <div class="contenedor1 form-part-container">
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="attended">Recibio</label>
                         <input type="text" name="attended" id="attended">
                     </div>
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="schedule">Horario</label>
                         <input type="text" name="schedule" id="schedule">
                     </div>
 
-                    <div class="col-full-4">
+                    <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="incidence">Incidencia</label>
                         <select>
@@ -179,9 +179,9 @@
                 <!--   ***********************************  -->
 
 
-                <div class="contenedor1">
+                <div class="contenedor1 form-part-container">
 
-                    <div class="col-full-12">
+                    <div class="col-full-12 data-container">
 
                         <h4>Observaciones</h4>
                         <textarea name="" id="" cols="30" rows="10">

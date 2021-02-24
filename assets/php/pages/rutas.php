@@ -21,7 +21,7 @@
 
                 <div class="col-full-12">
 
-                    <h1>Rutas</h1>
+                    <h1 class="title-pages">Rutas</h1>
 
                 </div>
 

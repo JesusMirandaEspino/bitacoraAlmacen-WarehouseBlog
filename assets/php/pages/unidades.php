@@ -20,7 +20,7 @@
 
                 <div class=" col-full-12">
 
-                    <h1>Unidades</h1>
+                    <h1 class="title-pages">Unidades</h1>
 
                 </div>
 

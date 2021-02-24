@@ -10,7 +10,7 @@
 
             <div class="contenedor1">
                 <div class="col-full-12">
-                    <h1>Informacion de Choferes</h1>
+                    <h1 class="title-pages">Informacion de Choferes</h1>
                 </div>
             </div>
         </section>

@@ -17,7 +17,7 @@ main{
 }
 
 
-//TODOheader//
+//TODOheader////////////
 .principal-tittle{
     font-family :$heavy;
     font-size: $title-super;
@@ -36,26 +36,8 @@ main{
 .title-container{
     background-color: $dark-blue;
 }
-//TODOheader//
 
-
-//TODO Footer
-.footer-container{
-    background-color: $dark-blue-primary;
-    min-height: 10vh;
-    
-        p{
-            font-family: $thin;
-            font-size: $note-super;
-            color:$white-primary;
-            margin:$min;
-        }
-}
-
-//TODO Footer
-
-
-//TODO Navbar PC
+//*********Navbar PC***********//
 .navbar-pc{
     @include flexboxbasic;
     flex-wrap: wrap;
@@ -74,3 +56,98 @@ main{
         }
     }
 }
+
+
+.title-pages{
+    color:$dark-blue;
+    margin-top:$space-small;
+    margin-bottom:$space-small;
+    font-size: $subtitle-super;
+    font-family: $bold;
+}
+
+
+
+
+//TODOheader////////////
+
+
+
+
+//TODO Main  //////////
+
+.title-form{
+    background-color: $light-blue-tertiary;
+    color:$white-primary;
+    font-family:$semibold;
+    font-size: $small;
+    padding:$min;
+    border-radius: 5px;
+}
+
+
+.form-part-container{
+    background-color:$dark-blue-tertiary;
+    margin-top: $space-medium;
+    margin-bottom: $space-medium;
+
+        .data-container{
+
+            @include flexboxbasic;
+            flex-direction: column;
+
+            h4{
+                color:$white-primary;
+                font-family: $regular;
+                margin-top:$min;
+                margin-bottom:$supermin;
+            }
+
+            label{
+                color:$white-primary;
+                font-family: $regular;
+                margin-top:$min;
+                margin-bottom:$supermin;
+            }
+
+            input{
+                font-family: $regular;
+                margin-bottom:$min;
+            }
+
+            option{
+                font-family: $regular;
+                margin-bottom:$min;
+            }
+
+            select, textarea{
+                font-family: $regular;
+                margin-bottom:$min;              
+            }
+
+        }
+
+
+}
+
+
+//TODO Main  //////////
+
+
+
+//TODO Footer//////////
+.footer-container{
+    background-color: $dark-blue-primary;
+    min-height: 10vh;
+    
+        p{
+            font-family: $thin;
+            font-size: $note-super;
+            color:$white-primary;
+            margin:$min;
+        }
+}
+
+//TODO Footer//////////
+
+

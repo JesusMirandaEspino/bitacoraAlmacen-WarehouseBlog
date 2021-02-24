@@ -16,7 +16,7 @@
 
                 <div class="col-full-12">
 
-                    <h1>Informacion de la Ruta del dia </h1>
+                    <h1 class="title-pages">Informacion de la Ruta del dia </h1>
 
                 </div>
 
@@ -38,7 +38,7 @@
 
 
             <!--  Primera parte Cliente -->
-            <div class="contenedor1">
+            <div class="contenedor1 form-part-container">
 
                 <div class="col-full-4">
                     <!--  Esta la tendra que dar en automatico -->
@@ -62,7 +62,7 @@
             <!--   ***********************************  -->
 
             <!--  Segunda parte  chofer y unidad -->
-            <div class="contenedor1">
+            <div class="contenedor1 form-part-container">
 
                 <div class="col-full-12">
                     <h3>Fecha</h3>
@@ -96,7 +96,7 @@
 
 
             <!--  Tercera parte  Pedido -->
-            <div class="contenedor1">
+            <div class="contenedor1 form-part-container">
 
                 <div class="col-full-3">
                     <h3>Tipo de Pedido</h3>
@@ -127,7 +127,7 @@
 
 
             <!--  Cuarta parte  Informacion adicional -->
-            <div class="contenedor1">
+            <div class="contenedor1 form-part-container">
 
                 <div class="col-full-4">
                     <h3>Recibio</h3>
@@ -148,7 +148,7 @@
             <!--   ***********************************  -->
 
 
-            <div class="contenedor1">
+            <div class="contenedor1 form-part-container">
 
                 <div class="col-full-12">
                     <h4>Observaciones</h4>
