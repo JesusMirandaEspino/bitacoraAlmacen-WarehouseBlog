@@ -34,7 +34,7 @@
 
     <main>
 
-        <section class="fila">
+        <section class="fila data-form-container">
 
 
             <!--  Primera parte Cliente -->

@@ -10,6 +10,8 @@ body{
     font-family:$regular;
     font-size:$regular-size;
     min-height: 100vh;
+    background-color: $darkerthanblack
+    
 }
 
 main{
@@ -22,7 +24,7 @@ main{
     font-family :$heavy;
     font-size: $title-super;
     margin-top:$space-small;
-    color:$light-gold-primary;
+    color:$light-gold-secundary;
 }
 
 .secundary-tittle{
@@ -30,18 +32,18 @@ main{
     font-size: $subtitle-super;
     margin-top:$space-small;
     margin-bottom:$space-small;
-    color:$light-gold-primary;
+    color:$light-gold-secundary;
 }
 
 .title-container{
-    background-color: $dark-blue;
+    background-color: $darkerthanblack;
 }
 
 //*********Navbar PC***********//
 .navbar-pc{
     @include flexboxbasic;
     flex-wrap: wrap;
-    background-color: $dark-blue-secundary;
+    background-color: $darkerthanblack;
     ul{
         @include flexboxbasic;
         flex-wrap: wrap;
@@ -59,7 +61,7 @@ main{
 
 
 .title-pages{
-    color:$dark-blue;
+    color:$white-secundary;
     margin-top:$space-small;
     margin-bottom:$space-small;
     font-size: $subtitle-super;
@@ -76,9 +78,15 @@ main{
 
 //TODO Main  //////////
 
+.data-form-container{
+    border: 3px solid $gold-secundary;
+    border-radius: 5px;
+    margin-top: $space-small;
+    margin-bottom:$space-small;
+}
+
 .title-form{
-    background-color: $light-blue-tertiary;
-    color:$white-primary;
+    color:$gold-tertiary;
     font-family:$semibold;
     font-size: $small;
     padding:$min;
@@ -87,7 +95,8 @@ main{
 
 
 .form-part-container{
-    background-color:$dark-blue-tertiary;
+    border: 2px solid #062f4f;
+    border-radius: 5px;
     margin-top: $space-medium;
     margin-bottom: $space-medium;
 
@@ -108,21 +117,43 @@ main{
                 font-family: $regular;
                 margin-top:$min;
                 margin-bottom:$supermin;
+
             }
 
             input{
+                color:$gold-tertiary;
                 font-family: $regular;
                 margin-bottom:$min;
+                background-color: transparent;
+                border:none;
+                border-bottom: 2px solid $dark-gold-tertiary;
             }
 
             option{
                 font-family: $regular;
                 margin-bottom:$min;
+                color:$gold-tertiary;
+                background-color: transparent;
+                border:none;
+                border-bottom: 2px solid $dark-gold-tertiary;
             }
 
-            select, textarea{
+            select{
                 font-family: $regular;
-                margin-bottom:$min;              
+                margin-bottom:$min;
+                color:$gold-tertiary;
+                background-color: transparent;
+                border:none;
+                border-bottom: 2px solid $dark-gold-tertiary;              
+            }
+
+            textarea{
+                font-family: $regular;
+                margin-bottom:$min;
+                color:$gold-tertiary;
+                background-color: transparent;
+                border:none;
+                border: 2px solid $dark-gold-tertiary;       
             }
 
         }
@@ -137,7 +168,8 @@ main{
 
 //TODO Footer//////////
 .footer-container{
-    background-color: $dark-blue-primary;
+    border-top: 2px solid #062f4f;
+    background-color: $darkerthanblack;
     min-height: 10vh;
     
         p{
