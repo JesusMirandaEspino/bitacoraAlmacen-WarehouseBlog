@@ -37,9 +37,9 @@
         <section class="fila">
 
 
-            <div class="contenedor1">
+            <div class="contenedor2 form-part-container">
 
-                <div class="col-full-12">
+                <div class="col-full-12 data-container">
                     <h2>Fecha semana</h2>
                     <p></p>
                 </div>
@@ -52,60 +52,60 @@
         <!--  Primera Incidencias -->
         <section class="fila">
 
-            <div class="contenedor1">
+            <div class="contenedor2">
 
-                <div class="col-full-12">
+                <div class="col-full-12 ">
                     <h2>Incidencias</h2>
                 </div>
 
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2">
 
                 <div class="col-full-2">
                     <h3>Perfecto</h3>
                 </div>
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <h3>No entregado</h3>
                 </div>
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <h3>Tardio</h3>
                 </div>
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <h3>Incompleto</h3>
                 </div>
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <h3>Cambio de codigo</h3>
                 </div>
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <h3>Dañado</h3>
                 </div>
 
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2 ">
 
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-2">
+                <div class="col-full-2 ">
                     <p>1</p>
                 </div>
 
@@ -118,15 +118,15 @@
         <!--  Segunda parte  Pedido -->
         <section class="fila">
 
-            <div class="contenedor1">
+            <div class="contenedor2">
 
-                <div class="col-full-12">
+                <div class="col-full-12 ">
                     <h2>Pedidos</h2>
                 </div>
 
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2">
 
                 <div class=" col-full-4">
                     <h3>Origen del pedido</h3>
@@ -148,15 +148,15 @@
 
 
 
-            <div class="contenedor1">
+            <div class="contenedor2 ">
 
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>1</p>
                 </div>
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>1</p>
                 </div>
 
@@ -168,29 +168,29 @@
 
 
         <!--  Tercera parte Municipios -->
-        <section class="contenedor1">
+        <section class="fila">
 
-            <div class="contenedor1">
-                <div class="col-full-12">
+            <div class="contenedor2">
+                <div class="col-full-12 ">
                     <h2>Municipios</h2>
                 </div>
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2 ">
 
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <!--  Esta la tendra que dar en automatico -->
                     <h3>Municipio</h3>
                     <p></p>
                 </div>
 
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <!--  Esta la tendra que dar en automatico -->
                     <h3>Cantidad</h3>
                     <p></p>
                 </div>
 
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <!--  Esta la tendra que dar en automatico -->
                     <h3>Monto $</h3>
                     <p></p>
@@ -199,15 +199,15 @@
             </div>
 
 
-            <div class="contenedor1">
+            <div class="contenedor2">
 
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>2</p>
                 </div>
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>2</p>
                 </div>
-                <div class="col-full-4">
+                <div class="col-full-4 ">
                     <p>2</p>
                 </div>
 
@@ -221,14 +221,14 @@
         <!--  Cuarta parte  Choferes -->
         <section class="fila">
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-12">
                     <h2>Choferes</h2>
                 </div>
             </div>
 
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-4">
                     <h3>Nombre</h3>
                     <p></p>
@@ -245,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-4">
                     <p>4</p>
                 </div>
@@ -264,14 +264,14 @@
         <!--  Quinta parte  Unidades -->
         <section class="fila">
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-12">
                     <h2>Vehiculos</h2>
                 </div>
             </div>
 
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-4">
                     <h3>Unidad</h3>
                     <p></p>
@@ -288,7 +288,7 @@
                 </div>
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-4">
                     <p>5</p>
                 </div>
@@ -305,12 +305,12 @@
 
 
         <section class="fila">
-            <div class="contenedor1">
+            <div class="contenedor2 ">
                 <div class="col-full-12">
                     <h4>Totales</h4>
                 </div>
             </div>
-            <div class="contenedor1">
+            <div class="contenedor2 ">
 
                 <div class="col-full-3">
                     <h3>Pedidos</h3>
@@ -330,7 +330,7 @@
 
             </div>
 
-            <div class="contenedor1">
+            <div class="contenedor2">
                 <div class="col-full-3">
                     <p>6</p>
                 </div>

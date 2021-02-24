@@ -96,7 +96,7 @@ main{
             @include flexboxbasic;
             flex-direction: column;
 
-            h4{
+            h4, h3, p, h2{
                 color:$white-primary;
                 font-family: $regular;
                 margin-top:$min;

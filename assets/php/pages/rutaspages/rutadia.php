@@ -43,7 +43,7 @@
             <form class="fila">
 
                 <!--  Primera parte del Formulario chofer y unidad -->
-                <div class="contenedor1 form-part-container ">
+                <div class="contenedor2 form-part-container ">
 
                     <div class="col-full-2 data-container">
                         <label for="date">Fecha</label>
@@ -92,7 +92,7 @@
 
 
                 <!--  Segunda parte del Formulario Pedido -->
-                <div class="contenedor1 form-part-container">
+                <div class="contenedor2 form-part-container">
 
                     <div class="col-full-3 data-container">
                         <label for="order">Tipo de Pedido</label>
@@ -126,7 +126,7 @@
 
 
                 <!--  Tercera parte del Formulario Cliente -->
-                <div class="contenedor1 form-part-container">
+                <div class="contenedor2 form-part-container">
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
@@ -151,7 +151,7 @@
 
 
                 <!--  Cuarta parte del Formulario Informacion adicional -->
-                <div class="contenedor1 form-part-container">
+                <div class="contenedor2 form-part-container">
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
@@ -179,7 +179,7 @@
                 <!--   ***********************************  -->
 
 
-                <div class="contenedor1 form-part-container">
+                <div class="contenedor2 form-part-container">
 
                     <div class="col-full-12 data-container">
 
