@@ -1,4 +1,5 @@
 <?php require('headrutas.php');  ?>
+<?php require('rutaconfig.php');  ?>
 
 <body>
 
@@ -47,7 +48,7 @@
 
                     <div class="col-full-2 data-container">
                         <label for="date">Fecha</label>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" value="<?php echo $today; ?>">
                     </div>
 
                     <div class="col-full-2 data-container">
