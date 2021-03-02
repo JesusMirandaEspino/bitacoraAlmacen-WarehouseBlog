@@ -14,6 +14,9 @@ define('DB_DATABASE', 'warehouseblog');
 define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
 
+
+
+
 /*define('ADMIN_USER', 'username');
 define('ADMIN_PASS', 'userpassword');*/
 
