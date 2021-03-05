@@ -1,28 +1,25 @@
+<?php require('class.php');  ?>
+
 <?php
 
 
-function insert_post( /*
-    $date,
-    $driver,
-    $copilot,
-    $vehicle,
-    $kmout,
-    $kmin,
-    $ordertype,
-    $orderorigin,
-    $requested,
-    $assortment,
+$postPerformance = new Performance( $driver, $copiloto, $vehicule, $kmout, $kmin  );
+$postOrder = new Order(  $ordertype, $orderorigin, $requested, $assortment,  );
+
+function insert_post( /* $date, $postPerformance, $postOrder
+    
     $clientname,
     $clientaddress,
     $clientcity,
     $attended,
     $schedule,
     $incidence,
-    $observations */ ){
+    $observations */)
+{
 
-global $app_db;
+    global $app_db;
 
-/*
+    /*
 
 $date           = $app_db->real_escape_string( $date );  
 $driver         = $app_db->real_escape_string( $driver );  
@@ -44,11 +41,11 @@ $observations   = $app_db->real_escape_string( $observations);
 
 */
 
-//$query = "INSERT INTO routeday( title, excerpt, content, published_on)
+    //$query = "INSERT INTO routeday( title, excerpt, content, published_on)
 
-// VALUES ( '$title', '$excerpt', '$content', '$published_on' )";
+    // VALUES ( '$title', '$excerpt', '$content', '$published_on' )";
 
-// $result = $app_db->query( $query );
+    // $result = $app_db->query( $query );
 
 
 }

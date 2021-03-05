@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $month = date('m');
 $day = date('d');
