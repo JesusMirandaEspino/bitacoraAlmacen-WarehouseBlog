@@ -1,5 +1,4 @@
 <?php require('../../../php/init.php');  ?>
-
 <!DOCTYPE html>
 <html lang="es">
 

@@ -1,6 +1,48 @@
 <?php require('headrutas.php');  ?>
 <?php require('rutaconfig.php');  ?>
 
+
+<?php
+
+//Performance
+$driver    =  filter_input(INPUT_POST, 'driver', FILTER_SANITIZE_STRING);
+$copiloto  =  filter_input(INPUT_POST, 'copiloto', FILTER_SANITIZE_STRING);
+$vehicle   =  filter_input(INPUT_POST, 'vehicle', FILTER_SANITIZE_STRING);
+$kmout     =  filter_input(INPUT_POST, 'kmout', FILTER_SANITIZE_NUMBER_INT);
+$kmin      =  filter_input(INPUT_POST, 'kmin', FILTER_SANITIZE_NUMBER_INT);
+
+//Order
+$ordertype       =  filter_input(INPUT_POST, 'ordertype', FILTER_SANITIZE_STRING);
+$orderorigin     =  filter_input(INPUT_POST, 'orderorigin', FILTER_SANITIZE_STRING);
+$requested       =  filter_input(INPUT_POST, 'requested', FILTER_SANITIZE_NUMBER_INT);
+$assortment      =  filter_input(INPUT_POST, 'assortment', FILTER_SANITIZE_NUMBER_INT);
+
+
+//Client
+$clientname       =  filter_input(INPUT_POST, 'clientname', FILTER_SANITIZE_STRING);
+$clientaddress    =  filter_input(INPUT_POST, 'clientaddress', FILTER_SANITIZE_STRING);
+$clientcity       =  filter_input(INPUT_POST, 'clientcity', FILTER_SANITIZE_STRING);
+$attended         =  filter_input(INPUT_POST, 'attended', FILTER_SANITIZE_STRING);
+$schedule         =  filter_input(INPUT_POST, 'schedule', FILTER_SANITIZE_STRING);
+$incidence        =  filter_input(INPUT_POST, 'incidence', FILTER_SANITIZE_STRING);
+$observations     = strip_tags( 'observations', '<br><div><p><img><a>');
+
+
+//date
+$date = $today;
+
+//FILTER_SANITIZE_NUMBER_INT
+
+$postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
+$postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
+$postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations);
+
+
+insert_post($date, $postPerformance, $postOrder, $postClient);
+
+?>
+
+
 <body>
 
     <header>
@@ -48,44 +90,44 @@
 
                     <div class="col-full-2 data-container">
                         <label for="date">Fecha</label>
-                        <input type="date" name="date" id="date" value="<?php echo $today; ?>">
+                        <input type="date" name="date" id="date" value="<?php echo $today;?>">
                     </div>
-
+                    $vehicule, $kmout, $kmin
                     <div class="col-full-2 data-container">
                         <label for="driver">Chofer</label>
-                        <select>
-                            <option value="driver1">Chofer1</option>
-                            <option value="driver2">Chofer2</option>
-                            <option value="driver3">Chofer3</option>
+                        <select name="driver" id="driver">
+                            <option value="<?php echo  htmlspecialchars($driver, ENT_QUOTES); ?>">Chofer1</option>
+                            <option value="<?php echo  htmlspecialchars($driver, ENT_QUOTES); ?>">Chofer2</option>
+                            <option value="<?php echo  htmlspecialchars($driver, ENT_QUOTES); ?>">Chofer3</option>
                         </select>
                     </div>
 
                     <div class="col-full-2 data-container">
                         <label for="copilot">Copiloto</label>
-                        <select>
-                            <option value="copilo1">Copiloto1</option>
-                            <option value="copilo2">Copiloto2</option>
-                            <option value="copilo3">Copiloto3</option>
+                        <select name="copiloto" id="copiloto">
+                            <option value="<?php echo  htmlspecialchars($copiloto, ENT_QUOTES); ?>">Copiloto1</option>
+                            <option value="<?php echo  htmlspecialchars($copiloto, ENT_QUOTES); ?>">Copiloto2</option>
+                            <option value="<?php echo  htmlspecialchars($copiloto, ENT_QUOTES); ?>">Copiloto3</option>
                         </select>
                     </div>
 
                     <div class="col-full-2 data-container">
                         <label for="vehicle">Unidad</label>
-                        <select>
-                            <option value="vehicle1">Unidad1</option>
-                            <option value="vehicle2">Unidad2</option>
-                            <option value="vehicle3">Unidad3</option>
+                        <select name="vehicle" id="vehicle">
+                            <option value="<?php echo  htmlspecialchars($vehicle, ENT_QUOTES); ?>">Unidad1</option>
+                            <option value="<?php echo  htmlspecialchars($vehicle, ENT_QUOTES); ?>">Unidad2</option>
+                            <option value="<?php echo  htmlspecialchars($vehicle, ENT_QUOTES); ?>">Unidad3</option>
                         </select>
                     </div>
 
                     <div class="col-full-2 data-container">
-                        <label for="kmentry">KM Salida</label>
-                        <input type="number" name="kmentry" id="kmentry">
+                        <label for="kmeout">KM Salida</label>
+                        <input type="number" name="kmout" id="kmout" value="<?php echo  htmlspecialchars($kmout, ENT_QUOTES); ?>">
                     </div>
 
                     <div class="col-full-2 data-container">
-                        <label for="kmarrival">KM Llegada</label>
-                        <input type="number" name="kmarrival" id="kmarrival">
+                        <label for="kmin">KM Llegada</label>
+                        <input type="number" name="kmin" id="kmin" value="<?php echo  htmlspecialchars($kmin, ENT_QUOTES); ?>">
                     </div>
 
                 </div>
@@ -96,30 +138,31 @@
                 <div class="contenedor2 form-part-container">
 
                     <div class="col-full-3 data-container">
-                        <label for="order">Tipo de Pedido</label>
-                        <select>
-                            <option value="order1">En Ruta</option>
-                            <option value="order2">Cliente Recoge</option>
+                        <label for="ordertype">Tipo de Pedido</label>
+                        <select name="ordertype" id="ordertype">
+                            <option value="<?php echo  htmlspecialchars($ordertype, ENT_QUOTES); ?>">En Ruta</option>
+                            <option value="<?php echo  htmlspecialchars($ordertype, ENT_QUOTES); ?>">Cliente Recoge</option>
                         </select>
                     </div>
 
                     <div class="col-full-3 data-container">
                         <!--  Esta la tendra que dar en automatico -->
-                        <label for="store">Tienda origen</label>
-                        <select>
-                            <option value="store1">Federacion</option>
-                            <option value="store2">Independiente</option>
+                        <label for="orderorigin">Tienda origen</label>
+                        <select name="orderorigin" id="orderorigin">
+                            <option value="<?php echo  htmlspecialchars($orderorigin, ENT_QUOTES); ?>">Federacion</option>
+                            <option value="<?php echo  htmlspecialchars($orderorigin, ENT_QUOTES); ?>">Independiente</option>
                         </select>
                     </div>
 
                     <div class="col-full-3 data-container">
                         <label for="requested">$ Solicitado</label>
-                        <input type="number" name="requested" id="requested">
+                        <input type="number" name="requested" id="requested" value="<?php echo  htmlspecialchars($requested, ENT_QUOTES); ?>">
                     </div>
+
 
                     <div class="col-full-3 data-container">
                         <label for="assortment">$ Surtido</label>
-                        <input type="number" name="assortment" id="assortment">
+                        <input type="number" name="assortment" id="assortment" value="<?php echo  htmlspecialchars($assortment, ENT_QUOTES); ?>">
                     </div>
 
                 </div>
@@ -127,24 +170,24 @@
 
 
                 <!--  Tercera parte del Formulario Cliente -->
-                <div class="contenedor2 form-part-container">
+                <div class=" contenedor2 form-part-container">
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="clientname">Nombre del cliente</label>
-                        <input type="text" name="clientname" id="clientname">
+                        <input type="text" name="clientname" id="clientname" value="<?php echo  htmlspecialchars($clientname, ENT_QUOTES); ?>">
                     </div>
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
-                        <label for="clientaddres">Domicilio</label>
-                        <input type="text" name="clientaddres" id="clientaddres">
+                        <label for="clientaddress">Domicilio</label>
+                        <input type="text" name="clientaddress" id="clientaddress" value="<?php echo  htmlspecialchars($clientaddress, ENT_QUOTES); ?>">
                     </div>
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="clientcity">Minucipio</label>
-                        <input type="text" name="clientcity" id="clientcity">
+                        <input type="text" name="clientcity" id="clientcity" value="<?php echo  htmlspecialchars($clientcity, ENT_QUOTES); ?>">
                     </div>
 
                 </div>
@@ -157,22 +200,22 @@
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="attended">Recibio</label>
-                        <input type="text" name="attended" id="attended">
+                        <input type="text" name="attended" id="attended" value="<?php echo  htmlspecialchars($attended, ENT_QUOTES); ?>">
                     </div>
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="schedule">Horario</label>
-                        <input type="text" name="schedule" id="schedule">
+                        <input type="text" name="schedule" id="schedule" value="<?php echo  htmlspecialchars($schedule, ENT_QUOTES); ?>">
                     </div>
 
                     <div class="col-full-4 data-container">
                         <!--  Esta la tendra que dar en automatico -->
                         <label for="incidence">Incidencia</label>
-                        <select>
-                            <option value="vehicle1">Ninguna</option>
-                            <option value="vehicle2">Faltante</option>
-                            <option value="vehicle3">Daño</option>
+                        <select name="ncidence" id="ncidence">
+                            <option value="<?php echo  htmlspecialchars($incidence, ENT_QUOTES); ?>">Ninguna</option>
+                            <option value="<?php echo  htmlspecialchars($incidence, ENT_QUOTES); ?>">Faltante</option>
+                            <option value="<?php echo  htmlspecialchars($incidence, ENT_QUOTES); ?>">Daño</option>
                         </select>
                     </div>
 
@@ -185,7 +228,8 @@
                     <div class="col-full-12 data-container">
 
                         <h4>Observaciones</h4>
-                        <textarea name="" id="" cols="30" rows="10">
+                        <textarea name="observations" id="observations" cols="30" rows="10">
+                        <?php echo  htmlspecialchars($observations, ENT_QUOTES); ?>
                         </textarea>
 
                     </div>

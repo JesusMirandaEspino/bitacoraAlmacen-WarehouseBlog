@@ -6,15 +6,15 @@ class Performance
 {
     var $driver;
     var $copiloto;
-    var $vehicule;
+    var $vehicle;
     var $kmout;
     var $kmin;
 
-    public function __construct($driver, $copiloto, $vehicule, $kmout, $kmin)
+    public function __construct($driver, $copiloto, $vehicle, $kmout, $kmin)
     {
         $this->$driver   = $driver;
         $this->$copiloto = $copiloto;
-        $this->$vehicule = $vehicule;
+        $this->$vehicle = $vehicle;
         $this->$kmout    = $kmout;
         $this->$kmin     = $kmin;
     }
