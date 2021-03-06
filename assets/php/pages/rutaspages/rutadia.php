@@ -31,14 +31,14 @@ $observations     = strip_tags( 'observations', '<br><div><p><img><a>');
 //date
 $date = $today;
 
-//FILTER_SANITIZE_NUMBER_INT
+
 
 $postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
 $postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
 $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations);
 
 
-insert_post($date, $postPerformance, $postOrder, $postClient);
+insert_post($date,$driver, $copiloto, $vehicle, $kmout, $kmin,$ordertype, $orderorigin, $requested, $assortment,$clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations  );
 
 ?>
 
@@ -92,7 +92,7 @@ insert_post($date, $postPerformance, $postOrder, $postClient);
                         <label for="date">Fecha</label>
                         <input type="date" name="date" id="date" value="<?php echo $today;?>">
                     </div>
-                    $vehicule, $kmout, $kmin
+
                     <div class="col-full-2 data-container">
                         <label for="driver">Chofer</label>
                         <select name="driver" id="driver">

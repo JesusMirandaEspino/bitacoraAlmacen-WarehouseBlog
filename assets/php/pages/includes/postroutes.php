@@ -5,27 +5,27 @@
 
 
 
-function insert_post(  $date, $postPerformance, $postOrder, $postClient )
+function insert_post(  $date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations )
 {
     global $app_db;
 
-$date           = $app_db->real_escape_string( $date );  
-$postPerformance->$driver         = $app_db->real_escape_string( $driver );  
-$postPerformance->$copiloto        = $app_db->real_escape_string( $copilot );  
-$postPerformance->$vehicle        = $app_db->real_escape_string( $vehicle );  
-$postPerformance->$kmout          = $app_db->real_escape_string( $kmout );  
-$postPerformance->$kmin           = $app_db->real_escape_string( $kmin  );  
-$postOrder->$ordertype      = $app_db->real_escape_string( $ordertype  );  
-$postOrder->$orderorigin    = $app_db->real_escape_string( $orderorigin  );      
-$postOrder->$requested      = $app_db->real_escape_string( $requested );  
-$postOrder->$assortment     = $app_db->real_escape_string( $assortment );      
-$postClient->$clientname     = $app_db->real_escape_string( $clientname );      
-$postClient->$clientaddress  = $app_db->real_escape_string( $clientaddress);      
-$postClient->$clientcity     = $app_db->real_escape_string( $clientcity );      
-$postClient->$attended       = $app_db->real_escape_string( $attended);      
-$postClient->$schedule       = $app_db->real_escape_string( $schedule);  
-$postClient->$incidence      = $app_db->real_escape_string( $incidence);  
-$postClient->$observations   = $app_db->real_escape_string( $observations);      
+$date           = $app_db->real_escape_string($date );  
+$driver         = $app_db->real_escape_string($driver );  
+$copiloto       = $app_db->real_escape_string($copiloto );  
+$vehicle        = $app_db->real_escape_string($vehicle );  
+$kmout          = $app_db->real_escape_string($kmout );  
+$kmin           = $app_db->real_escape_string($kmin  );  
+$ordertype      = $app_db->real_escape_string($ordertype  );  
+$orderorigin    = $app_db->real_escape_string($orderorigin  );      
+$requested      = $app_db->real_escape_string($requested );  
+$assortment     = $app_db->real_escape_string($assortment );      
+$clientname     = $app_db->real_escape_string($clientname );      
+$clientaddress  = $app_db->real_escape_string($clientaddress);      
+$clientcity     = $app_db->real_escape_string($clientcity );      
+$attended       = $app_db->real_escape_string($attended);      
+$schedule       = $app_db->real_escape_string($schedule);  
+$incidence      = $app_db->real_escape_string($incidence);  
+$observations   = $app_db->real_escape_string($observations);      
 
 
 

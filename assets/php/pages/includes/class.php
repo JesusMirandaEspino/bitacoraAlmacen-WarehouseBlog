@@ -4,11 +4,11 @@
 //TODO Class for vehicule, driver and more, this informatio will save in route db and performance db
 class Performance
 {
-    var $driver;
-    var $copiloto;
-    var $vehicle;
-    var $kmout;
-    var $kmin;
+    public  $driver;
+    public  $copiloto;
+    public  $vehicle;
+    public  $kmout;
+    public  $kmin;
 
     public function __construct($driver, $copiloto, $vehicle, $kmout, $kmin)
     {
