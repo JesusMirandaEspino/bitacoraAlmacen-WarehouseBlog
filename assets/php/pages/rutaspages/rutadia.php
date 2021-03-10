@@ -38,7 +38,19 @@ $postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
 $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
 
 
-insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+        if (empty($driver) || empty($copiloto)  || empty($vehicle) ||  empty($kmout) || 
+            empty($kmin) || empty($ordertype)  || empty($orderorigin) || empty($requested) ||
+            empty($assortment) || empty($clientname)  || empty($clientaddress) || empty($clientcity) || 
+            empty($attended) || empty($scheduleorder) || empty($incidence) || empty($observations)
+            ) {
+
+            $error = true;
+        } else {
+
+            insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+        }
+
+
 
 ?>
 
