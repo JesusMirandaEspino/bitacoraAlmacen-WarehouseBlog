@@ -4,51 +4,57 @@
 
 <?php
 
-//Performance
-$driver    =  filter_input(INPUT_POST, 'driver', FILTER_SANITIZE_STRING);
-$copiloto  =  filter_input(INPUT_POST, 'copiloto', FILTER_SANITIZE_STRING);
-$vehicle   =  filter_input(INPUT_POST, 'vehicle', FILTER_SANITIZE_STRING);
-$kmout     =  filter_input(INPUT_POST, 'kmout', FILTER_SANITIZE_NUMBER_INT);
-$kmin      =  filter_input(INPUT_POST, 'kmin', FILTER_SANITIZE_NUMBER_INT);
 
-//Order
-$ordertype       =  filter_input(INPUT_POST, 'ordertype', FILTER_SANITIZE_STRING);
-$orderorigin     =  filter_input(INPUT_POST, 'orderorigin', FILTER_SANITIZE_STRING);
-$requested       =  filter_input(INPUT_POST, 'requested', FILTER_SANITIZE_NUMBER_INT);
-$assortment      =  filter_input(INPUT_POST, 'assortment', FILTER_SANITIZE_NUMBER_INT);
+if (isset($_POST['submit-new-route'])) {
 
+    //Performance
+    $driver    =  filter_input(INPUT_POST, 'driver', FILTER_SANITIZE_STRING);
+    $copiloto  =  filter_input(INPUT_POST, 'copiloto', FILTER_SANITIZE_STRING);
+    $vehicle   =  filter_input(INPUT_POST, 'vehicle', FILTER_SANITIZE_STRING);
+    $kmout     =  filter_input(INPUT_POST, 'kmout', FILTER_SANITIZE_NUMBER_INT);
+    $kmin      =  filter_input(INPUT_POST, 'kmin', FILTER_SANITIZE_NUMBER_INT);
 
-//Client
-$clientname       =  filter_input(INPUT_POST, 'clientname', FILTER_SANITIZE_STRING);
-$clientaddress    =  filter_input(INPUT_POST, 'clientaddress', FILTER_SANITIZE_STRING);
-$clientcity       =  filter_input(INPUT_POST, 'clientcity', FILTER_SANITIZE_STRING);
-$attended         =  filter_input(INPUT_POST, 'attended', FILTER_SANITIZE_STRING);
-$scheduleorder    =  filter_input(INPUT_POST, 'schedule', FILTER_SANITIZE_STRING);
-$incidence        =  filter_input(INPUT_POST, 'incidence', FILTER_SANITIZE_STRING);
-$observations     = strip_tags('observations', '<br><div><p><img><a>');
+    //Order
+    $ordertype       =  filter_input(INPUT_POST, 'ordertype', FILTER_SANITIZE_STRING);
+    $orderorigin     =  filter_input(INPUT_POST, 'orderorigin', FILTER_SANITIZE_STRING);
+    $requested       =  filter_input(INPUT_POST, 'requested', FILTER_SANITIZE_NUMBER_INT);
+    $assortment      =  filter_input(INPUT_POST, 'assortment', FILTER_SANITIZE_NUMBER_INT);
 
 
-//date
-$date = $today;
+    //Client
+    $clientname       =  filter_input(INPUT_POST, 'clientname', FILTER_SANITIZE_STRING);
+    $clientaddress    =  filter_input(INPUT_POST, 'clientaddress', FILTER_SANITIZE_STRING);
+    $clientcity       =  filter_input(INPUT_POST, 'clientcity', FILTER_SANITIZE_STRING);
+    $attended         =  filter_input(INPUT_POST, 'attended', FILTER_SANITIZE_STRING);
+    $scheduleorder    =  filter_input(INPUT_POST, 'schedule', FILTER_SANITIZE_STRING);
+    $incidence        =  filter_input(INPUT_POST, 'incidence', FILTER_SANITIZE_STRING);
+    $observations     = strip_tags('observations', '<br><div><p><img><a>');
+
+
+    //date
+    $date = $today;
 
 
 
-$postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
-$postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
-$postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+    $postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
+    $postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
+    $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+
+    if (
+        empty($driver) || empty($copiloto)  || empty($vehicle) ||  empty($kmout) ||
+        empty($kmin) || empty($ordertype)  || empty($orderorigin) || empty($requested) ||
+        empty($assortment) || empty($clientname)  || empty($clientaddress) || empty($clientcity) ||
+        empty($attended) || empty($scheduleorder) || empty($incidence) || empty($observations)
+    ) {
+
+        $error = true;
+    } else {
+
+        insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+    }
+}
 
 
-        if (empty($driver) || empty($copiloto)  || empty($vehicle) ||  empty($kmout) || 
-            empty($kmin) || empty($ordertype)  || empty($orderorigin) || empty($requested) ||
-            empty($assortment) || empty($clientname)  || empty($clientaddress) || empty($clientcity) || 
-            empty($attended) || empty($scheduleorder) || empty($incidence) || empty($observations)
-            ) {
-
-            $error = true;
-        } else {
-
-            insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
-        }
 
 
 
@@ -95,7 +101,7 @@ $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $s
             </div>
 
             <!--TODO Formulario entrada de informacion de la ruta del dia    -->
-            <form class="fila">
+            <form action="" method="post" class="fila">
 
                 <!--  Primera parte del Formulario chofer y unidad -->
                 <div class="contenedor2 form-part-container ">
@@ -253,7 +259,7 @@ $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $s
 
                     <div class="col-full-12 data-container">
 
-                        <input type="button" value="Guardar">
+                        <input type="submit" value="Guardar" name="submit-new-route">
 
                     </div>
 

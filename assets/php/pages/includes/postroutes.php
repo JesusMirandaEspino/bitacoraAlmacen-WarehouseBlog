@@ -3,38 +3,53 @@
 <?php
 
 
+$driver         = '';
+$copiloto       = '';
+$vehicle        = '';
+$kmout          = 0;
+$kmin           = 0;
+$ordertype      = '';
+$orderorigin    = '';
+$requested      = 0;
+$assortment     = 0;
+$clientname     = '';
+$clientaddress  = '';
+$clientcity     = '';
+$attended       = '';
+$schedule       = '';
+$incidence      = '';
+$observations   = '';
 
 
-function insert_post(  $dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations )
+
+function insert_post($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations)
 {
     global $app_db;
 
-$driver         = $app_db->real_escape_string($driver );  
-$copiloto       = $app_db->real_escape_string($copiloto );  
-$vehicle        = $app_db->real_escape_string($vehicle );  
-$kmout          = $app_db($kmout );  
-$kmin           = $app_db($kmin  );  
-$ordertype      = $app_db->real_escape_string($ordertype  );  
-$orderorigin    = $app_db->real_escape_string($orderorigin  );      
-$requested      = $app_db($requested );  
-$assortment     = $app_db($assortment );      
-$clientname     = $app_db->real_escape_string($clientname );      
-$clientaddress  = $app_db->real_escape_string($clientaddress);      
-$clientcity     = $app_db->real_escape_string($clientcity );      
-$attended       = $app_db->real_escape_string($attended);      
-$schedule       = $app_db->real_escape_string($schedule);  
-$incidence      = $app_db->real_escape_string($incidence);  
-$observations   = $app_db->real_escape_string($observations);      
+    $driver         = $app_db->real_escape_string($driver);
+    $copiloto       = $app_db->real_escape_string($copiloto);
+    $vehicle        = $app_db->real_escape_string($vehicle);
+    $kmout          = $app_db($kmout);
+    $kmin           = $app_db($kmin);
+    $ordertype      = $app_db->real_escape_string($ordertype);
+    $orderorigin    = $app_db->real_escape_string($orderorigin);
+    $requested      = $app_db($requested);
+    $assortment     = $app_db($assortment);
+    $clientname     = $app_db->real_escape_string($clientname);
+    $clientaddress  = $app_db->real_escape_string($clientaddress);
+    $clientcity     = $app_db->real_escape_string($clientcity);
+    $attended       = $app_db->real_escape_string($attended);
+    $schedule       = $app_db->real_escape_string($schedule);
+    $incidence      = $app_db->real_escape_string($incidence);
+    $observations   = $app_db->real_escape_string($observations);
 
 
 
-    $query = "INSERT INTO routeday(  $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations, $dateroute);
+    $query = "INSERT INTO dayroute(  driver, copiloto, vehicle, kmout, kmin, ordertype, orderorigin, requested, assortment, clientname, clientaddress, clientcity, attended,  schedule,  incidence,  observations, dateroute);
 
     VALUES ( $driver', '$copiloto', '$vehicle', '$kmout', '$kmin', '$ordertype', '$orderorigin', '$requested', '$assortment', '$clientname', '$clientaddress', '$clientcity', '$attended', '$schedule', '$incidence', '$observations', '$dateroute' )";
 
-    $result = $app_db->query( $query );
-
-
+    $result = $app_db->query($query);
 }
 
 
