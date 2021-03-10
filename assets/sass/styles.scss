@@ -177,6 +177,27 @@ main{
                 border: 2px solid $color-secondary-2-1;       
             }
 
+
+            input[type=button]{
+                color:$color-inputs !important;
+                background-color: transparent;
+                font-family: $regular;
+                margin-bottom:$min;
+                margin-top:$min;
+                padding:$min;
+                background-color: transparent;
+                border:none;
+                border: 2px solid $color-secondary-2-1;
+                border-radius: 5px;
+                @include transitionbasic;
+
+
+                &:hover{
+                    background-color: $title-secundary-color;
+                    color:$title-principal-color !important;
+                }
+            }
+
         }
 
 

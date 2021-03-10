@@ -23,9 +23,9 @@ $clientname       =  filter_input(INPUT_POST, 'clientname', FILTER_SANITIZE_STRI
 $clientaddress    =  filter_input(INPUT_POST, 'clientaddress', FILTER_SANITIZE_STRING);
 $clientcity       =  filter_input(INPUT_POST, 'clientcity', FILTER_SANITIZE_STRING);
 $attended         =  filter_input(INPUT_POST, 'attended', FILTER_SANITIZE_STRING);
-$schedule         =  filter_input(INPUT_POST, 'schedule', FILTER_SANITIZE_STRING);
+$scheduleorder    =  filter_input(INPUT_POST, 'schedule', FILTER_SANITIZE_STRING);
 $incidence        =  filter_input(INPUT_POST, 'incidence', FILTER_SANITIZE_STRING);
-$observations     = strip_tags( 'observations', '<br><div><p><img><a>');
+$observations     = strip_tags('observations', '<br><div><p><img><a>');
 
 
 //date
@@ -35,10 +35,10 @@ $date = $today;
 
 $postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
 $postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
-$postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations);
+$postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
 
 
-insert_post($date,$driver, $copiloto, $vehicle, $kmout, $kmin,$ordertype, $orderorigin, $requested, $assortment,$clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations  );
+insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
 
 ?>
 
@@ -90,7 +90,7 @@ insert_post($date,$driver, $copiloto, $vehicle, $kmout, $kmin,$ordertype, $order
 
                     <div class="col-full-2 data-container">
                         <label for="date">Fecha</label>
-                        <input type="date" name="date" id="date" value="<?php echo $today;?>">
+                        <input type="date" name="date" id="date" value="<?php echo $today; ?>">
                     </div>
 
                     <div class="col-full-2 data-container">
@@ -231,6 +231,17 @@ insert_post($date,$driver, $copiloto, $vehicle, $kmout, $kmin,$ordertype, $order
                         <textarea name="observations" id="observations" cols="30" rows="10">
                         <?php echo  htmlspecialchars($observations, ENT_QUOTES); ?>
                         </textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contenedor2 form-part-container">
+
+                    <div class="col-full-12 data-container">
+
+                        <input type="button" value="Guardar">
 
                     </div>
 

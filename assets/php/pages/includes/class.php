@@ -47,17 +47,17 @@ class Client{
     var $clientaddress;
     var $clientcity;
     var $attended;
-    var $schedule;
+    var $scheduleorder;
     var $incidence;
     var $observations;
 
-    public function __construct( $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations  ){
+    public function __construct( $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations  ){
 
     $this->$clientname      = $clientname;
     $this->$clientaddress   = $clientaddress;
     $this->$clientcity      = $clientcity;
     $this->$attended        = $attended;
-    $this->$schedule        = $schedule;
+    $this->$scheduleorder   = $scheduleorder;
     $this->$incidence       = $incidence;
     $this->$observations    = $observations;
 
