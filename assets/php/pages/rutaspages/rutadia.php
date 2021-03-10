@@ -49,8 +49,8 @@ if (isset($_POST['submit-new-route'])) {
 
         $error = true;
     } else {
-
-        insert_post($date, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+        $postOrder->postOrder($ordertype, $orderorigin, $requested, $assortment);
+        insert_route( $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations, $date);
     }
 }
 

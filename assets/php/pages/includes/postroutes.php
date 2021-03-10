@@ -22,7 +22,7 @@ $observations   = '';
 
 
 
-function insert_post($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $schedule, $incidence, $observations)
+function insert_route($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations)
 {
     global $app_db;
 
@@ -39,15 +39,15 @@ function insert_post($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $o
     $clientaddress  = $app_db->real_escape_string($clientaddress);
     $clientcity     = $app_db->real_escape_string($clientcity);
     $attended       = $app_db->real_escape_string($attended);
-    $schedule       = $app_db->real_escape_string($schedule);
+    $scheduleorder  = $app_db->real_escape_string($scheduleorder);
     $incidence      = $app_db->real_escape_string($incidence);
     $observations   = $app_db->real_escape_string($observations);
 
 
 
-    $query = "INSERT INTO dayroute(  driver, copiloto, vehicle, kmout, kmin, ordertype, orderorigin, requested, assortment, clientname, clientaddress, clientcity, attended,  schedule,  incidence,  observations, dateroute);
+    $query = "INSERT INTO dayroute(  driver, copiloto, vehicle, kmout, kmin, ordertype, orderorigin, requested, assortment, clientname, clientaddress, clientcity, attended,  scheduleorder,  incidence,  observations, dateroute);
 
-    VALUES ( $driver', '$copiloto', '$vehicle', '$kmout', '$kmin', '$ordertype', '$orderorigin', '$requested', '$assortment', '$clientname', '$clientaddress', '$clientcity', '$attended', '$schedule', '$incidence', '$observations', '$dateroute' )";
+    VALUES ( $driver', '$copiloto', '$vehicle', '$kmout', '$kmin', '$ordertype', '$orderorigin', '$requested', '$assortment', '$clientname', '$clientaddress', '$clientcity', '$attended', '$scheduleorder', '$incidence', '$observations', '$dateroute' )";
 
     $result = $app_db->query($query);
 }

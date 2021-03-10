@@ -38,6 +38,17 @@ class Order{
 
         }
 
+    public function postOrder($ordertype, $orderorigin, $requested, $assortment ){
+
+    global $app_db;
+
+    $query = "INSERT INTO dayorder(  ordertype, orderorigin, requested, assortment );
+
+    VALUES (' $ordertype', '$orderorigin', '$requested', '$assortment' )";
+
+        $result = $app_db->query($query);
+    }   
+
 }
 
 //TODO class about client, this informatio will save in routes db and client db
