@@ -7,6 +7,8 @@
 
 if (isset($_POST['submit-new-route'])) {
 
+    
+
     //Performance
     $driver    =  filter_input(INPUT_POST, 'driver', FILTER_SANITIZE_STRING);
     $copiloto  =  filter_input(INPUT_POST, 'copiloto', FILTER_SANITIZE_STRING);
@@ -34,11 +36,13 @@ if (isset($_POST['submit-new-route'])) {
     //date
     $date = $today;
 
-
+    
 
     $postPerformance = new Performance($driver, $copiloto, $vehicle, $kmout, $kmin);
     $postOrder = new Order($ordertype, $orderorigin, $requested, $assortment);
     $postClient = new Client($clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations);
+
+    insert_route( $driver, $copiloto, $vehicle, $kmout, $kmin, $ordertype, $orderorigin, $requested, $assortment, $clientname, $clientaddress, $clientcity, $attended, $scheduleorder, $incidence, $observations, $date);
 
     if (
         empty($driver) || empty($copiloto)  || empty($vehicle) ||  empty($kmout) ||

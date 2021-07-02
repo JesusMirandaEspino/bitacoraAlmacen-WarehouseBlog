@@ -29,12 +29,12 @@ function insert_route($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $
     $driver         = $app_db->real_escape_string($driver);
     $copiloto       = $app_db->real_escape_string($copiloto);
     $vehicle        = $app_db->real_escape_string($vehicle);
-    $kmout          = $app_db($kmout);
-    $kmin           = $app_db($kmin);
+    $kmout          = $app_db->real_escape_string($kmout);
+    $kmin           = $app_db->real_escape_string($kmin);
     $ordertype      = $app_db->real_escape_string($ordertype);
     $orderorigin    = $app_db->real_escape_string($orderorigin);
-    $requested      = $app_db($requested);
-    $assortment     = $app_db($assortment);
+    $requested      = $app_db->real_escape_string($requested);
+    $assortment     = $app_db->real_escape_string($assortment);
     $clientname     = $app_db->real_escape_string($clientname);
     $clientaddress  = $app_db->real_escape_string($clientaddress);
     $clientcity     = $app_db->real_escape_string($clientcity);
@@ -43,13 +43,14 @@ function insert_route($dateroute, $driver, $copiloto, $vehicle, $kmout, $kmin, $
     $incidence      = $app_db->real_escape_string($incidence);
     $observations   = $app_db->real_escape_string($observations);
 
+   
 
+    $query = "INSERT INTO dayroute(  driver, copiloto, vehicle, kmout, kmin, ordertype, orderorigin, requested, assortment, clientname, clientaddress, clientcity, attended,  scheduleorder,  incidence,  observations, dateroute)
 
-    $query = "INSERT INTO dayroute(  driver, copiloto, vehicle, kmout, kmin, ordertype, orderorigin, requested, assortment, clientname, clientaddress, clientcity, attended,  scheduleorder,  incidence,  observations, dateroute);
-
-    VALUES ( $driver', '$copiloto', '$vehicle', '$kmout', '$kmin', '$ordertype', '$orderorigin', '$requested', '$assortment', '$clientname', '$clientaddress', '$clientcity', '$attended', '$scheduleorder', '$incidence', '$observations', '$dateroute' )";
+    VALUES ( '$driver', '$copiloto', '$vehicle', '$kmout', '$kmin', '$ordertype', '$orderorigin', '$requested', '$assortment', '$clientname', '$clientaddress', '$clientcity', '$attended', '$scheduleorder', '$incidence', '$observations', '$dateroute' )";
 
     $result = $app_db->query($query);
+     //die('si se ejecuto');
 }
 
 
